@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac Coelho</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <meta name="description" content="Cardápio Mac Coelho - Veja nossos lanches e bebidas. Peça via WhatsApp!">
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-inner">
+            <h1>Mac Coelho</h1>
+            <p class="subtitle">Lanches | Porções | Bebidas</p>
+            <a class="cta" href="#menus">Ver Cardápio</a>
+        </div>
+    </header>
+
+    <main id="menus" class="container">
+        <section class="menus-grid">
+            <figure class="menu-card">
+                <img src="./assets/cardapio1.jpeg" alt="Cardápio 1 - Mac Coelho" loading="lazy"/>
+                <figcaption>Cardápio - Parte 1</figcaption>
+            </figure>
+
+            <figure class="menu-card">
+                <img src="./assets/cardapio2.jpeg" alt="Cardápio 2 - Mac Coelho" loading="lazy"/>
+                <figcaption>Cardápio - Parte 2</figcaption>
+            </figure>
+        </section>
+
+        <section class="info">
+            <h2>Peça pelo WhatsApp</h2>
+            <p>Toque no botão verde no canto inferior direito para iniciar uma conversa no WhatsApp. Também é possível tocar em qualquer imagem para ampliá-la.</p>
+        </section>
+    </main>
+
+    <!-- Image modal -->
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+        <button class="lightbox-close" aria-label="Fechar">×</button>
+        <img class="lightbox-img" src="" alt="Imagem ampliada do cardápio">
+    </div>
+
+    <!-- WhatsApp floating button -->
+    <a id="whatsapp-btn" class="whatsapp" aria-label="Abrir WhatsApp" href="#">
+        <!-- Inline WhatsApp SVG icon + accessible text -->
+        <svg class="wa-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M20.52 3.48A11.9 11.9 0 0012 .5 11.86 11.86 0 001.5 11.99c0 2.1.55 4.07 1.6 5.83L.5 23.5l6.01-2.01a11.86 11.86 0 005.99 1.6h.01c6.58 0 11.97-5.34 11.97-11.98 0-3.2-1.25-6.2-3.96-8.63zM12 21.5a9.38 9.38 0 01-5.02-1.4l-.36-.22-3.57 1.19 1.19-3.49-.23-.36A9.4 9.4 0 012.6 12.01 9.5 9.5 0 1112 21.5zm5.18-7.2c-.27-.14-1.6-.79-1.85-.88-.25-.09-.43-.14-.62.14s-.71.88-.87 1.06c-.16.18-.33.2-.61.07-.28-.14-1.19-.44-2.27-1.4-.84-.74-1.41-1.65-1.58-1.93-.16-.27-.02-.42.12-.56.12-.12.28-.31.42-.47.14-.16.18-.27.28-.45.09-.18.04-.33-.02-.47-.06-.14-.62-1.5-.85-2.05-.22-.54-.45-.47-.62-.48-.16-.01-.34-.01-.52-.01-.18 0-.47.07-.72.33-.25.26-.96.94-.96 2.29 0 1.35.98 2.65 1.12 2.83.14.18 1.93 3.02 4.68 4.23 3.15 1.37 3.15.91 3.72.86.18-.01.58-.07.89-.28.31-.21 1-.98 1.14-1.93.14-.95.14-1.76-.86-2.3z"/></svg>
+        <span>WhatsApp</span>
+    </a>
+
+    <script src="./scripts/main.js"></script>
+</body>
+</html>
