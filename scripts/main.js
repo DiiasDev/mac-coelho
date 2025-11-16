@@ -27,8 +27,7 @@ document.addEventListener('DOMContentLoaded', function(){
 	// WhatsApp button
 	const waBtn = document.getElementById('whatsapp-btn');
 	// Assumption: business phone number is Brazil +55 19 99913-0814 (from image). Update if needed.
-	// const phone = '5519999130814';
-	const phone = '5519993292661';
+	const phone = '5519999130814';
 	const defaultMessage = encodeURIComponent('Olá! Gostaria de fazer um pedido. Você pode me ajudar?');
 	waBtn.href = `https://wa.me/${phone}?text=${defaultMessage}`;
 	waBtn.target = '_blank';
